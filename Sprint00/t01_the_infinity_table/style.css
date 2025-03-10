@@ -1,0 +1,48 @@
+img{
+	height: 120px;
+	width: 120px;
+	border-radius: 20px;
+}
+table{
+	width: 1220px;
+	text-align: center;
+	border-collapse: collapse;
+}
+caption{
+	text-align: left;
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+thead th{
+	border-color: black;
+	color: white;
+	background-color: black;
+}
+tbody td{
+	border: 2px solid white;
+	padding: 20px;
+}
+.space_stone{
+	background-color: #005591;
+
+}
+.soul_stone{
+	background-color: #d2913c;
+}
+.time_stone{
+	background-color: #007d00;
+}
+.mind_stone{
+	background-color: #ffff05;
+}
+.power_stone{
+	background-color: #7d73b4;
+}
+.reality_stone{
+	background-color: #be282d;
+}
+tfoot td{
+	border: 1px solid grey;
+	padding: 10px;
+}

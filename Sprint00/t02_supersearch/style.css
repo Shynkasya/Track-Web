@@ -1,0 +1,30 @@
+div{
+	display: flex;
+}
+input{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 2em;
+	border: 1px solid blue;
+	border-radius: 2px;
+	color: green;
+	flex-grow: 1;
+}
+input:hover{
+	color: red;
+}
+button{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: green;
+	border-radius: 2px;
+	border: 1px solid black;
+}
+button:hover{
+	color: red;
+	border: 1px solid black;
+}

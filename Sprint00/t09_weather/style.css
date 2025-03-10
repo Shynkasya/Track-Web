@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.forecast{
+	width: 120px;
+	height: 170px;
+	text-align: center;
+	margin: 1px;
+}
+#forecast{
+	display: flex;
+}
+.forecast:hover{
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.time{
+	font-size: 1.5em;
+	font-family: Lato;
+	font-weight: 700;
+	color: white;
+	background-color: #3c91b4;
+	margin: 0px;
+}
+.temperature{
+	font-size: 2em;
+	font-weight: 400;
+	font-family: Lato;
+	margin: 0px;
+}

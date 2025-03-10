@@ -1,0 +1,17 @@
+.japan{
+	width: 250px;
+	height: 150px;
+	border: 1px solid grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.japan::after{
+	 content: "";
+	height: 100px;
+	width: 100px;
+	clip-path: circle(50% at 50% 50%);
+	background-color: #aa2332;
+
+}

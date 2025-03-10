@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Superhero application</title>
+        <meta name="description" content="t08. superhero application">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Superhero Form</h1>
+        <form>
+            <div>
+                <h2>About the Superhero</h2>
+                <br>
+                <label>Real name</label>
+                <input type="text" placeholder="Superhero real name" autofocus>
+                <label>Superhero name</label>
+                <input type="text" placeholder="Superhero alias">
+                <label>Age</label>
+                <input type="number"  min="1" max="999" step="1">
+                <br>
+                <label class="about">About</label>
+                <textarea name="about" id=about maxlength="500" rows="5" cols="70" placeholder="Information about the superhero, max 500 symbol"></textarea>
+                <br>
+                <label>Photo:</label>
+        	<input type="file">
+            </div>
+            <div>
+                <h2>Powers</h2>
+		<br>
+                <input type="checkbox" name="power">
+                <label>Telekinesis</label>
+                <input type="checkbox" name="power">
+                <label>Super strength or speed</label>
+                <input type="checkbox" name="power">
+                <label>Shapeshifting</label>
+                <input type="checkbox" name="power">
+                <label>Flight</label>
+                <input type="checkbox" name="power">
+                <label>Elemental control</label>
+                <input type="checkbox" name="power">
+                <label>Other</label>
+                <br>
+                <label>Level of control</label>
+                <input class="slider" type="range" min="0" max="10" value="1" step="1">
+            </div>
+            <div>
+                <h2>Origin of Power</h2>
+		<br>
+                <input type="radio" name="power_origin" class="radio_button">
+                <label>Unknown</label>
+                <input type="radio" name="power_origin" class="radio_button">
+                <label>Freak lab accident</label>
+                <input type="radio" name="power_origin" class="radio_button">
+                <label>Choosen by ancient wise being</label>
+                <input type="radio" name="power_origin" class="radio_button">
+                <label>The superhero is not human</label>
+                <input type="radio" name="power_origin" class="radio_button">
+                <label>Other</label>
+            </div>
+            <button type="submit">Clear</button>
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>

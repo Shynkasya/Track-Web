@@ -1,0 +1,46 @@
+caption{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+table{
+	background-image: linear-gradient( 90deg, #6e0000, antiquewhite);
+	border: 4px solid black;
+	text-align: center;
+}
+thead{
+	color: #ffe369;
+	font-weight: bold;
+	background-color: rgba(110, 0, 0, 0.4);
+	border: 2px solid rgba(189, 195, 199, 0.05);
+	padding: 10px;
+}
+.first_row{
+	color: white;
+	font-weight: bold;
+	background-color: transparent;
+}
+.second_row{
+	color: white;
+	font-weight: bold;
+	background-color: rgba(143,148,251, 0.1);
+}
+tbody td{
+	color: midnightblue;
+	border: 2px solid rgba(189, 195, 199, 0.05);
+	padding: 5px 50px;
+	background-color:  antiquewhite;
+}
+.max_val{
+	color: white;
+	background-color:  darkred;
+}
+tfoot td a{
+	color: white;
+}
+tfoot td{
+	font-weight: bold;
+	padding: 10px;
+}
