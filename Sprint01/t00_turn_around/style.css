@@ -1,0 +1,7 @@
+body{
+	text-align: center;
+    padding:60px;
+}
+img:hover{
+	transform: rotate(-30deg);
+}

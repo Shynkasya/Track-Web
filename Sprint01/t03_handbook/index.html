@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Handbook</title>
+	<meta name="description" content="t03 handbook">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Handbook</h1>
+	<div id="html">
+		<h2>HTML</h2>
+		<div class="container">
+			<div id="p" class="content">
+				<h3 class="name">p</h3>
+				<p class="description">The HTML &lt;p&gt; element defines a paragraph.</p>
+				<p class="code_example">&lt;p&gt;Some paragraph&lt;/p&gt;</p>
+				<p>Some paragraph</p>
+			</div>
+			<div id="br" class="content">
+				<h3 class="name">br</h3>
+				<p class="description"> produces a line break in text</p>
+				<p class="code_example">&lt;br&gt;</p>
+				<p>Some paragraph</p>
+				<br>
+				<p>Some another text</p>
+			</div>
+			<div id="a" class="content">
+				<h3 class="name">a</h3>
+				<p class="description"> creates a hyperlink to anything that a URL can address</p>
+				<p class="code_example">&lt;a href = "link.com.ua"&gt;&lt;/a&gt;</p>
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Google</a>
+			</div>
+			<div id="time" class="content">
+				<h3 class="name">time</h3>
+				<p class="description">define a time and a date</p>
+				<p class="code_example">&lt;time&gt;10:00&lt;/time&gt;</p>
+				<time>10:00</time>
+			</div>
+		</div>
+	</div>
+	<div id = "css">
+		<h2>CSS</h2>
+		<div class="container">
+			<div id="background-color" class="content">
+				<h3 class="name">background-color</h3>
+				<p class="description">set the background color of an element.</p>
+				<p class="code_example">background-color: #4CAF50;</p>
+				<div class="view_example" style="background-color: #4CAF50; color: white;">
+				This box has a green background.
+				</div>
+			</div>
+			<div id="font-family" class="content">
+				<h3 class="name">font-family</h3>
+				<p class="description">specifies the font of the text inside an element.</p>
+				<p class="code_example">font-family: "Arial", sans-serif;</p>
+				<div class="view_example" style="font-family: 'Arial', sans-serif;">
+				This text uses the Arial font.
+				</div>
+			</div>
+			<div id="padding" class="content">
+				<h3 class="name">padding</h3>
+				<p class="description">creates space inside an element, between the content and the border.</p>
+				<div class="code_example">padding: 20px;</div>
+				<div class="view_example" style="padding: 20px; background-color: #f1f1f1; border: 1px solid #ddd;">
+					This box has 20px padding around the content.
+				</div>
+			</div>
+			<div id="border" class="content">
+				<h3 class="name">border</h3>
+				<p class="description">sets the border around an element.</p>
+				<div class="code_example">border: 2px solid #333;</div>
+				<div class="view_example" style="border: 2px solid #333">
+					This box has a solid black border.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "protocols">
+		<h2>PROTOCOLS</h2>
+		<div class="container">
+			<div id="http_methods" class="content">
+				<h3 class="name">HTTP methods</h3>
+				<p class="description">GET - retrieves data from the server without making any changes to it.<br><br>
+					POST - sends data to the server to create or update a resource.<br><br>
+					PUT - replaces the current resource with new data.<br><br>
+					DELETE - removes the specified resource from the server.<br><br>
+					PATCH - partially updates an existing resource with new data.<br><br>
+					HEAD - similar to GET but retrieves only the headers, not the body, of the response.<br><br>
+					OPTIONS - describes the communication options for the target resource, often used in CORS.<br><br>
+					TRACE - performs a diagnostic trace of the path the request takes to reach the server.</p>
+				</div>
+				<div id="http_status" class="content">
+					<h3 class="name">HTTP status code</h3>
+					<p class="description">1xx: Informational<br>example: 100 Continue<br><br>
+						2xx: Success<br>example: 200 OK<br><br>
+						3xx: Redirection<br>example: 300 Multiple choice<br><br>
+						4xx: Client Error<br>example: 404 Not Found<br><br>
+						5xx: Server Error<br>example: 500 Internal Server Error</p>
+				</div>
+				<div id="dns" class="content">
+					<h3 class="name">DNS list by type</h3>
+					<p class="description">A - (address record) - specifies IP address (IPv4) for given host. A records are used for conversion of domain names to corresponding IP addresses<br><br> 
+						AAAA (IPv6 address record) - specifies IPv6 address for given host. So it works the same way as the A record and the difference is the type of IP address<br><br>
+						CNAME (canonical name record) - specifies a domain name that has to be queried in order to resolve the original DNS query. Therefore CNAME records are used for creating aliases of domain names. CNAME records are truly useful when we want to alias our domain to an external domain. In other cases we can remove CNAME records and replace them with A records and even decrease performance overhead<br><br>
+						HINFO (Host Information records) - used to acquire general information about a host. The record specifies type of CPU and OS. The HINFO record data provides the possibility to use operating system specific protocols when two hosts want to communicate. For security reasons the HINFO records are not typically used on public servers<br><br>
+						ISDN (Integrated Services Digital Network records) specifies ISDN address for a host. An ISDN address is a telephone number that consists of a country code, a national destination code, a ISDN Subscriber number and, optionally, a ISDN subaddress. The function of the record is only variation of the A resource record function<br><br>
+						MX (Mail exchanger record) - specifies a mail exchange server for a DNS domain name. The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts. Typically, there are more than one mail exchange server for a DNS domain and each of them have set priority<br><br>
+						NS (name server) - specifies an authoritative name server for given host<br><br>
+						PTR (Reverse-lookup Pointer records) - As opposed to forward DNS resolution (A and AAAA DNS records), the PTR record is used to look up domain names based on an IP address<br><br>
+						SOA (Start of Authority records) - The record specifies core information about a DNS zone, including the primary name server, the email of the domain administrator, the domain serial number, and several timers relating to refreshing the zone<br><br>
+						TXT (Text records) - The text record can hold arbitrary non-formatted text string. Typically, the record is used by Sender Policy Framework (SPF) to prevent fake emails to appear to be sent by you</p>
+				</div>
+				<div id="ip" class="content">
+					<h3 class="name">Identifying google's IP</h3>
+					<p class="description">To identify google.com IP, follow the next steps<br><br>
+						1 open Terminal<br><br>
+						2. paste and run the command nslookup google.com<br><br>
+						As result, you will receive "name" and "address":<br><br>
+						Name: google.com.ua<br><br>
+						Address: 216.58.215.99<br><br>
+						Repeat steps 1 and 2 to identify google.com.ua IP</p>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

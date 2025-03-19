@@ -1,0 +1,12 @@
+.gauntlet{
+	width: 100px;
+}
+
+.person{
+	width: 50px;
+}
+
+.gauntlet:hover ~ .people .row-even .person:nth-child(even),
+.gauntlet:hover ~ .people .row-odd .person:nth-child(odd){
+	opacity: 0;
+}

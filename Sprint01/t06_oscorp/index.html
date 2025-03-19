@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Oscorp</title>
+	<meta name="description" content="t06. Oscorp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div id="content">
+    <header>
+      <div class="logo">Oscorp</div>
+      <a href="">About</a>
+      <a href="">Service</a>
+      <a href="">Contact</a>
+      <div class="search">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="contact">
+        <span>Phone: 30-303-030-3030</span>
+      </div>
+    </header>
+    <nav class="breadcrumb">
+      <a href="" class="orange">Home</a> / <a href="">Catalog</a>
+    </nav>
+    <div class="catalog">
+      <h2>Catalog</h2>
+      <div class="tags">
+        <div class="tag">
+            <input type="checkbox" id="weapon" checked>
+            <label for="weapon">Weapon</label>
+        </div>
+        <div class="tag">
+            <input type="checkbox" id="alien" checked>
+            <label for="alien">Alien</label>
+        </div>
+        <div class="tag">
+            <input type="checkbox" id="green" checked>
+            <label for="green">Green</label>
+        </div>
+      </div>
+    </div>
+    <div id="main_content">
+      <div class="filters">
+        <h2>Chance of Lethal Effect</h2>
+        <div class="filter-options">
+          <div class="check_block">
+            <label class="checkbox">
+              <input type="checkbox" name="filter">
+              <span></span>
+            </label>
+            <label class="name">Unlikely (0-20%)</label>
+          </div>
+          <div class="check_block">
+            <label class="checkbox">
+              <input type="checkbox" name="filter">
+              <span></span>
+            </label>
+            <label class="name">Mild (20-40%)</label>
+          </div>
+          <div class="check_block">
+            <label class="checkbox">
+              <input type="checkbox" name="filter">
+              <span></span>
+            </label>
+            <label class="name">Moderate (40-60%)</label>
+          </div>
+          <div class="check_block">
+            <label class="checkbox">
+              <input type="checkbox" name="filter">
+              <span></span>
+            </label>
+            <label class="name">Likely (60-80%)</label>
+          </div>
+          <div class="check_block">
+            <label class="checkbox">
+              <input type="checkbox" name="filter">
+              <span></span>
+            </label>
+            <label class="name">Certain (80-100%)</label>
+          </div>
+        </div>
+        <div class="price-slider">
+          <label>Price Range:</label>
+          <input type="range" class="price-range" min="0" max="1000">
+          <span>
+            <span>$0</span>
+            <span>$5000</span>
+          </span>
+        </div>
+      </div>
+
+
+      <div class="products">
+        <div class="product">
+          <img src="assets/images/kitchen_socks.jpg" alt="Kitchen socks">
+          <div class="info">
+            <h3>Kitchen socks</h3>
+            <p class="price">$499.99</p>
+            <p class ="avaliable">avaliable</p>
+            <button class ="avaliable"><a href="card.html">Buy</a></button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/new_year_socks.jpg" alt="New Year socks">
+          <div class="info">
+            <h3>New Year socks</h3>
+            <p class="price">$999.99</p>
+            <p class ="avaliable">avaliable</p>
+            <button class ="avaliable"><a href="card.html">Buy</a></button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/summer_socks.jpg" alt="Summer socks">
+          <div class="info">
+            <h3>Summer socks</h3>
+            <p class="price">$1999.99</p>
+            <p class ="avaliable">avaliable</p>
+            <button class ="avaliable"><a href="card.html">Buy</a></button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/rainbow_socks.jpg" alt="Rainbow socks">
+          <div class="info">
+            <h3>Rainbow socks</h3>
+            <p class="price">$2999.99</p>
+            <p class ="p_not_avaliable">not avaliable</p>
+            <button class ="not_avaliable">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <a>Previous</a>
+    <a>1</a>
+    <a>2</a>
+    <a>Next</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Oscorp Online Store</p>
+  </footer>
+</body>
+</html>
