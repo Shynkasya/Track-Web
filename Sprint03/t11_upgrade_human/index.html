@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Upgrade human</title>
+	<meta name="description" content="t11. Upgrade human">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id = "main_content">
+		<div id="info">
+			<img id="img" src="assets/images/human.jpg" alt="Human">
+			<div id="description">
+				<span id = "First"></span>
+				<span id = "Last"></span>
+				<span id = "Gender"></span>
+				<span id = "Age"></span>
+				<span id = "Calories"></span>
+			</div>
+		</div>
+		<div id="content_panel">
+			<div id = "display"></div>
+			<div id = "buttons">
+				<input type="button" id="sleep" value="Sleep">
+				<input type="button" id="feed" value="Feed">
+				<input type="button" id="fly" value="Fly">
+				<input type="button" id="fight" value="Figth">
+			</div>
+			<input type="button" id="to_hero" onclick="convert_to_superhero()"  value="Turn into superhero">
+			<input type="button" id="to_human" onclick="convert_to_human()"  value="Turn into human">
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+}
+#main_content{
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: gray;
+    display: grid;
+}
+img{
+    width: 75%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#display{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    font-size: 40px;
+    height: fit-content;
+    display: none;
+    margin: 0 auto;
+}
+#description{
+    display: grid;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+span{
+    font-size: 30px;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+}
+input{
+    font-size: 14px;
+    background-color: black;
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+#fly, #fight{
+    display: none;
+}
+#content_panel{
+    display: grid;
+
+}
+#to_human{
+    display: none;
+}

@@ -1,0 +1,104 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: lightgrey;
+}
+
+.wrapper {
+	max-width: 1924px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+	align-content: center;
+	padding-top: 100px;
+}
+
+.display {
+	height: 200px;
+	position: relative;
+}
+
+.message {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+	position: absolute;
+	width: 200px;
+	bottom: 100%;
+}
+
+.message::before {
+	border-color: white transparent transparent transparent;
+	border-style: solid;
+	border-width: 10px 20px 120px 20px;
+	position: absolute;
+	top: 99%;
+	content: "";
+}
+
+.person {
+	display: block;
+	height: 100%;
+}
+
+.person>img {
+	display: block;
+	height: 100%;
+}
+
+.interact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.actions {
+	display: flex;
+	background: lightcoral;
+	padding: 10px;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	max-width: 80%;
+	font-size: 0.8em;
+	align-items: center;
+	justify-content: center;
+}
+
+.action {
+	display: flex;
+
+}
+
+.action>button {
+	background: lightblue;
+	outline: none;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+.action>button:hover {
+	background-color: blue;
+	color: white;
+}
+
+.properties {
+	background: lightpink;
+	padding: 10px 40px;
+	border-radius: 10px;
+	color: white;
+}
+
+.property {
+	display: flex;
+}
+
+.propery-name {
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.property-value {
+	font-style: italic;
+}
