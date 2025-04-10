@@ -1,0 +1,92 @@
+body {
+    background: #000;
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Высота body равна высоте окна браузера */
+}
+
+.code {
+    padding-top: 40px;
+}
+
+.grid_title {
+    grid-column: 1 / -1; /* Растянуть на всю ширину */
+    text-align: center;
+    background: #f3cc30;
+    width: 100%;
+    padding-top: 30px;
+}
+
+
+
+
+.grid_html_container, .grid_protocol_container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    background: #f3cc30;
+    display: grid;
+    gap: 25px 25px;
+    place-items: center;
+    align-items: center;
+    max-width: min(100vw - 10%);
+}
+
+
+
+
+.subtopic, .subtopic_protocol {
+    background-color: #f6f4f4;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 20px;
+    min-width: 250px;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .grid_html_container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+
+    .grid_protocol_container {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: stretch;
+    }
+
+    .subtopic_protocol {
+        width: calc(690px + (0.52 * (100vw - 768px)));
+        min-width: 690px;
+        max-width: 892px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .grid_html_container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+
+    .grid_protocol_container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+
+    .subtopic_protocol {
+        width: calc((690px + (0.85 * (100vw - 768px))) / 2);
+        min-width: 350px;
+        max-width: 600px;
+    }
+}
+
+

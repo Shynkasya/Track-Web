@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Handbook</title>
+</head>
+<body>
+
+
+<div class="grid_html_container">
+    <div class="grid_title">
+        <h1>Handbook</h1>
+        <h2>HTML</h2>
+    </div>
+    <div class="subtopic">
+        <h3>h1</h3>
+        <p>
+            The h1 to h6 tags are used to create an HTML headings
+        </p>
+        <p class="code">
+            <code>
+                &lt;h1&gt;Title&lt;/h1&gt;
+            </code>
+        </p>
+        <div>
+            <h1>Title</h1>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>input</h3>
+        <p>
+            The <code>&lt;input&gt;</code> tag specifies an input field where the user can enter data.
+
+            The <code>&lt;input&gt;</code> element is the most important form element.
+
+            The <code>&lt;input&gt;</code> element can be displayed in several ways, depending on the type attribute.
+        </p>
+        <p class="code">
+            <code>
+                &lt;input type="text" id="fname" name="fname"&gt;
+            </code>
+        </p>
+        <div>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>hr</h3>
+        <p>
+            The <code> &lt;hr&gt;</code> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+        </p>
+        <p class="code">
+            <code>
+                &lt;hr&gt;
+            </code>
+        </p>
+        <div>
+            <hr>
+            <p>
+                The <code>&lt;hr&gt;</code> element is most often displayed as a horizontal rule
+                that is used to separate content (or define a change) in an HTML page.
+            </p>
+            <hr>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>table</h3>
+        <p>
+            The <code>&lt;table&gt;</code> tag defines an HTML table.
+        </p>
+        <p class="code">
+            <code>
+                &lt;table&gt;&lt;/table&gt;
+            </code>
+        </p>
+        <div>
+            <table>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>button</h3>
+        <p>The <code>&lt;button&gt;</code> tag defines a clickable button.
+        </p>
+        <p class="code">
+            <code>
+                &lt;button type="button"&gt;Click Me!&lt;/button&gt;
+            </code>
+        </p>
+        <div>
+            <button type="button">Click Me!</button>
+        </div>
+    </div>
+</div>
+<div class="grid_html_container">
+    <div class="grid_title">
+        <h2>CSS</h2>
+    </div>
+    <div class="subtopic">
+        <h3>border-style</h3>
+        <p>
+            The border-style property can have from one to four values (for the top border, right border, bottom border,
+            and the left border) </p>
+        <p class="code">
+            <code>
+                p.dotted {border-style: dotted;}
+            </code>
+        </p>
+        <div>
+            <p class="dotted">A dotted border.</p>
+            <style>
+                p.dotted {
+                    border-style: dotted;
+                }
+            </style>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>background-color</h3>
+        <p>
+            The background-color property specifies the background color of an element.
+        </p>
+        <p class="code">
+            <code>
+                .a {
+                background-color: yellow;
+                }
+            </code>
+        </p>
+        <div>
+            <p class="a">This paragraph has its own background color.</p>
+            <style>
+                .a {
+                    background-color: yellow;
+                }
+            </style>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>margin</h3>
+        <p>
+            The CSS margin properties are used to create space around elements, outside of any defined borders.
+        </p>
+        <p>
+            With CSS, you have full control over the margins. There are properties for setting the margin for each side
+            of an element (top, right, bottom, and left).
+        </p>
+        <p class="code">
+            <code>
+                .mar {
+                border: 1px solid black;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 150px;
+                margin-left: 80px;
+                background-color: lightblue;
+                }
+            </code>
+        </p>
+        <div>
+            <style>
+                .mar {
+                    border: 1px solid black;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    margin-right: 80px;
+                    margin-left: 40px;
+                    background-color: lightblue;
+                }
+            </style>
+            <div class="a">
+                <p class="mar">This div element has a top margin of 30px, a right margin of 80px, a bottom margin of
+                    30px, and a left margin of 40px
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="subtopic">
+        <h3>text-align</h3>
+        <p>
+            The text-align property is used to set the horizontal alignment of a text.
+        </p>
+        <p class="code">
+            <code>
+                .r {
+                text-align: right;
+                }
+            </code>
+        </p>
+        <div>
+            <style>
+                .r {
+                    text-align: right;
+                }
+            </style>
+            <p class="r">
+                paragraph 3 (right)
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="grid_protocol_container">
+    <div class="grid_title">
+        <h2>PROTOCOL</h2>
+    </div>
+    <div class="subtopic_protocol">
+        <h3>HTTP methods</h3>
+        <p>
+            GET - use this type of requests to retrieve resource representation/information only – and not to modify it
+            in any way
+        </p>
+        <p>
+            POST - used to create a new resource into the collection of resources
+        </p>
+        <p>
+            PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to
+            create a new resource or not)
+        </p>
+        <p>
+            DELETE - used to delete resources (identified by the Request-URI)
+        </p>
+        <p>
+            PATCH - HTTP PATCH requests are to make partial update on a resource
+        </p>
+    </div>
+    <div class="subtopic_protocol">
+        <h3>HTTP status code</h3>
+        <p>
+            1xx: Informational
+            example: 100 Continue
+        </p>
+        <p>
+            2xx: Success
+            example: 201 Created
+        </p>
+        <p>
+            3xx: Redirection
+            example: 301 Moved Permanently
+        </p>
+        <p>
+            4xx: Client Error
+            example: 404 Not Found
+        </p>
+        <p>
+            5xx: Server Error
+            example: 500 Internal Server Error
+        </p>
+    </div>
+
+    <div class="subtopic_protocol">
+        <h3>DNS list by types</h3>
+        <p>
+            A - (address record) - specifies IP address (IPv4) for given host. A records are used for conversion of
+            domain names to corresponding IP addresses
+        </p>
+        <p>
+            AAAA (IPv6 address record) - specifies IPv6 address for given host. So it works the same way as the A record
+            and the difference is the type of IP address
+        </p>
+        <p>
+            CNAME (canonical name record) - specifies a domain name that has to be queried in order to resolve the
+            original DNS query. Therefore CNAME records are used for creating aliases of domain names. CNAME records are
+            truly useful when we want to alias our domain to an external domain. In other cases we can remove CNAME
+            records and replace them with A records and even decrease performance overhead
+        </p>
+        <p>
+            HINFO (Host Information records) - used to acquire general information about a host. The record specifies
+            type of CPU and OS. The HINFO record data provides the possibility to use operating system specific
+            protocols when two hosts want to communicate. For security reasons the HINFO records are not typically used
+            on public servers
+        </p>
+        <p>
+            ISDN (Integrated Services Digital Network records) - specifies ISDN address for a host.
+            An ISDN address is a telephone number that consists of a country code, a national destination code, a ISDN
+            Subscriber number and, optionally, a ISDN subaddress. The function of the record is only variation of the A
+            resource record function
+            MX (Mail exchanger record) - specifies a mail exchange server for a DNS domain name. The information is used
+            by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts. Typically, there are more than one
+            mail exchange server for a DNS domain and each of them have set priority
+        </p>
+        <p>
+            NS (name server) - specifies an authoritative name server for given host
+        </p>
+        <p>
+            PTR (Reverse-looking Pointer records) - As opposed to forward DNS resolution (A and AAAA DNS records), the
+            PTR record is used to look up domain names based on an IP address
+        </p>
+        <p>
+            SOA (Start of Authority records) - The record specifies core information about a DNS zone, including the
+            primary name server, the email of the domain administrator, the domain serial number, and several timers
+            relating to refreshing the zone
+        </p>
+        <p>
+            TXT (Text records) - The text record can hold arbitrary non-formatted text string. Typically, the record is
+            used by Sender Policy Framework (SPF) to prevent fake emails to appear to be sent by you
+        </p>
+    </div>
+    <div class="subtopic_protocol">
+        <h3>Identifying google's IP</h3>
+        <p>
+            To identify google.com IP, follow the next
+            steps:
+        </p>
+        <ol>
+            <li>
+                open Terminal
+            </li>
+            <li>
+                paste and run the command nslookup
+                google.com
+            </li>
+        </ol>
+        <p>
+            As result, you will receive "name" and
+            "address":
+        </p>
+        <ul>
+            <li>
+                Name: google.com.ua
+            </li>
+            <li>
+                Address: 216.58.215.99
+            </li>
+        </ul>
+        <p>
+            Repeat steps 1 and 2 to identify google.com.ua IP
+        </p>
+
+    </div>
+
+
+    <div class="grid_title">
+        <h2></h2>
+    </div>
+</div>
+
+
+</body>
+</html>

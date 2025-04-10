@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<h1>Settings</h1>
+<div class="wrapper">
+    <div class="container">
+
+        <fieldset class="row1">
+            <legend>Typeface
+            </legend>
+            <form>
+                <label for="type"></label>
+                <select name="type" id="type">
+                    <option>Acunim Pro</option>
+                    <option>Comic Sans</option>
+                    <option>Times New Roman</option>
+                </select>
+            </form>
+
+            <span  class="title">
+                Dark UI
+            </span>
+            <label class="toggle">
+                <input type="checkbox" class="toggle-input">
+                <span class="toggle-track"></span>
+                <span class="toggle-thumb"></span>
+            </label>
+        </fieldset>
+        <fieldset class="row1 second">
+            <legend>Weight                                                                     Color</legend>
+            <div class="weight">
+                <label for="Regular" >
+                    <input type="radio" id="Regular" name="origin" class="radio">
+                    <span class="radio_shape"></span>
+                    Regular
+                </label>
+                <label for="Bold">
+                    <input type="radio" id="Bold" name="origin" class="radio">
+                    <span class="radio_shape"></span>
+                    Bold
+                </label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="blue" class="box">
+                <label class="box_shape blue" for="blue"></label>
+                <input type="checkbox" id="green" class="box">
+                <label class="box_shape green" for="green"></label>
+                <input type="checkbox" id="pink" class="box">
+                <label class="box_shape pink" for="pink"></label>
+                <input type="checkbox" id="yellow" class="box">
+                <label class="box_shape yellow" for="yellow"></label>
+                <input type="checkbox" id="orange" class="box">
+                <label class="box_shape orange" for="orange"></label>
+            </div>
+        </fieldset>
+        <fieldset class="row1 second">
+            <legend>Size</legend>
+            <div class="size">
+                <label for="level"></label>
+                <input type="range" id="level" min="0" max="10" step="1" value="1">
+            </div>
+
+        </fieldset>
+        <div class="letters">
+            <span>A</span>
+            <span class="big">A</span>
+        </div>
+    </div>
+    <div class="pic">
+        <img src="assets/images/artistic-brush.png" alt="" >
+        <img src="assets/images/user-icon.png" alt="">
+        <img src="assets/images/sms-speech-bubble.png" alt="">
+        <img src="assets/images/computer-screen.png" alt="">
+    </div>
+</div>
+</body>
+</html>

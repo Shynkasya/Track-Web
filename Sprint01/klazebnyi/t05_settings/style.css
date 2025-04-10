@@ -1,0 +1,295 @@
+body {
+    font:  16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #d1d0d0;
+
+}
+
+h1{
+    color: black;
+    font: bold 40px 'Times New Roman', sans-serif;
+
+    text-align: center;
+    margin-left: -80px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    display: flex;
+    width: 780px;
+    height: 505px;
+    background-color: #3d4752;
+    padding-top: 15px;
+    padding-left: 9px;
+    padding-bottom: 8px;
+    margin-left: 25px;
+    align-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 690px;
+    height: 430px;
+    background-color: #46525f;
+    margin-top: 15px;
+    padding-top: 35px;
+    border: solid 1px #9f9f9f;
+}
+
+.pic{
+    width: 75px;
+    height: 320px;
+    background-color: #303a43;
+    align-content: center;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+img {
+    width: 42px;
+    height: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 18px;
+}
+
+
+
+
+
+
+.row1{
+    display: flex;
+    vertical-align: middle;
+    border: 0;
+}
+
+.second {
+    margin-top: 12px;
+}
+
+.title{
+    margin:0 22% 0 18%;
+}
+
+#type {
+    font:  16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    margin-left: 20px;
+    width: 240px;
+    height: 110%;
+    border: 2px solid #3e3ef8;
+    border-radius: 7px;
+    background-color: #303a43;
+    color: #d1d0d0;
+    margin-top: -10px;
+}
+
+
+
+
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+}
+
+.toggle-input, .radio, .box {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-track {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #303a43; /* Цвет фона */
+    border-radius: 34px; /* Скругление фона  */
+    transition: background-color 0.3s;
+}
+
+.toggle-thumb {
+    position: absolute;
+    height: 32px; /* Высота кнопки (из Figma) */
+    width: 32px; /* Ширина кнопки (из Figma) */
+    left: 4px; /* Позиция кнопки (выключено, из Figma) */
+    bottom: 4px;
+    background-color: #37bba4; /* Цвет кнопки (из Figma) */
+    border-radius: 50%; /* Скругление кнопки (из Figma) */
+    transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-track {
+    background-color: #2496f2; /* Цвет фона (включено, из Figma) */
+}
+
+.toggle-input:checked + .toggle-track + .toggle-thumb {
+    transform: translateX(26px); /* Позиция кнопки (включено, из Figma) */
+}
+
+
+
+.radio_shape {
+    background-color: #303a43;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #9f9f9f; /* Граница для неактивного состояния */
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Стили для галочки */
+.radio_shape::before {
+    content: '';
+    display: none; /* Скрываем по умолчанию */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 4px;
+    border: 2px solid #2ed58e; /* Цвет галочки */
+    border-top: none;
+    border-right: none;
+    transform: translate(-50%, -60%) rotate(-45deg); /* Центрирование и поворот */
+}
+
+/* Показываем галочку, когда радиокнопка выбрана */
+.radio:checked + .radio_shape::before {
+    display: block;
+}
+
+.box_shape{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #9f9f9f; /* Граница для неактивного состояния */
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.blue {
+    background-color: #4076c2;
+}
+
+.green {
+    background-color: #37bca4;
+}
+
+.pink {
+    background-color: #dd57d0;
+}
+
+.yellow {
+    background-color: #dcd951;
+}
+
+.orange {
+    background-color: #de7c58;
+}
+
+.box_shape::before {
+    content: '';
+    display: none; /* Скрываем по умолчанию */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 4px;
+    border: 2px solid white; /* Цвет галочки */
+    border-top: none;
+    border-right: none;
+    transform: translate(-50%, -60%) rotate(-45deg); /* Центрирование и поворот */
+}
+
+.checkbox{
+    margin-top: 8px;
+    margin-left: 24%;
+}
+
+.box:checked + .box_shape::before {
+    display: block;
+}
+
+
+
+
+legend{
+    padding-top: 15px;
+    white-space: pre;
+    margin-left: 20px;
+}
+
+.weight {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+.size {
+    margin-top: 40px;
+    padding-left: 15px;
+    display: block;
+}
+
+/* Стилизация ползунка */
+input[type="range"] {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 230px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 3px;
+    background: #303a43;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    background: #37bca4;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -13px; /* Центрируем ползунок */
+}
+
+.letters{
+    font:  16px  'Times New Roman', sans-serif;
+    color: #ededed;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 36px;
+    margin-top: 12px;
+    width: 240px;
+    vertical-align: top;
+}
+.big{
+    margin-left: 80%;
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+

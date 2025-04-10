@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.image:hover {
+    rotate: -30deg;
+}

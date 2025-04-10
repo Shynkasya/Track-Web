@@ -1,0 +1,7 @@
+.gauntlet:hover ~ table tr:nth-child(2n) td:nth-child(2n)  {
+    opacity: 0;
+}
+
+.gauntlet:hover ~ table tr:nth-child(2n-1) td:nth-child(2n-1)  {
+    opacity: 0;
+}

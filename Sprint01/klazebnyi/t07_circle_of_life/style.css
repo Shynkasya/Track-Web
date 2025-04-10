@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    animation: moveCircle 10s linear infinite;
+    transition: background-color 0s 2s;
+}
+
+/* Анимация */
+@keyframes moveCircle {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 150px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+div:hover {
+    background-color: red;
+}

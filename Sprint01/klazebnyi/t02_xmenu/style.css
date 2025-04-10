@@ -1,0 +1,136 @@
+.menu {
+    text-align: center;
+    font-size: 3em;
+    background-color: red;
+    color: white;
+    padding: 0.2em;
+}
+.container {
+    text-align: center;
+}
+
+a, span {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+    width: 22%;
+}
+
+.dropdown-button {
+    background-color: #1d9e22;
+    color: white;
+    padding: 10px 20%;
+    margin-top: 15px;
+    border: 2px solid  black;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+.dropdown-button::after {
+    content: "⮟";
+    position: absolute;
+    right: 3%;
+    top: 38%;
+    font-size: 120%;
+    transition: transform 0.5s ease; /* Анимация для поворота */
+}
+
+
+
+.dropdown-button:hover::after {
+    content: "⮝"; /* Символ "^" */
+    position: absolute;
+    right: 3%;
+    top: 38%;
+    font-size: 120%;
+    transition: transform 0.5s ease; /* Анимация для поворота */
+}
+
+.item::after {
+    content: "▶";
+    color: white;
+    position: absolute;
+    right: 3%;
+    top: 28%;
+    font-size: 120%;
+    transition: transform 0.5s ease; /* Анимация для поворота */
+}
+
+.item:hover::after {
+    content: "◀";
+    color: white;
+    position: absolute;
+    right: 3%;
+    top: 28%;
+    font-size: 120%;
+    transition: transform 0.5s ease; /* Анимация для поворота */
+}
+
+.dropdown-content {
+    padding:  0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #97d392;
+    top: 100%;
+    width: 100%;
+
+}
+.dropdown-content_sub {
+    padding:  0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #ddfadb;
+    left: 100.5%;
+    top: 0;
+    width: 100%;
+}
+
+.item {
+    list-style: none;
+    padding:  5%;
+    position: relative;
+    border-left: midnightblue 1px solid;
+    border-right: midnightblue 1px solid;
+    border-bottom: midnightblue 1px solid;
+}
+
+.item_sub {
+    list-style: none;
+    padding:  5%;
+    border: midnightblue 1px solid;
+}
+
+.item_sub a {
+    pointer-events: auto;
+}
+
+.dropdown-content:hover,
+.dropdown-button:hover + .dropdown-content {
+    display: block;
+}
+.item:hover .dropdown-content_sub {
+    display: table;
+}
+
+
+.opposite_dark {
+    background-color: red;
+}
+
+.opposite {
+    background-color: #f87a7a;
+}
+
+.opposite_light {
+    background-color: #fdd2d2;
+}

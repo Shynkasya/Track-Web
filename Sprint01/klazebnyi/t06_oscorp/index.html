@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oscorp</title>
+</head>
+<body>
+<header>
+    <h3>
+        <a class="u-url u-name" href="">
+            OSCORP
+        </a>
+    </h3>
+    <h4>
+        <a class="note" href="">
+            about
+        </a>
+    </h4>
+    <h4>service</h4>
+    <h4>
+        <a class="h-card" href="">
+            contact
+        </a>
+    </h4>
+    <div class="search-container">
+        <label for="search-input"></label><input id="search-input" class="search-element" type="search"
+                                                 placeholder="Search">
+    </div>
+    <h4>Phone
+        <a class="tel" href="tel:+380631111007">+380631111007</a>
+    </h4>
+
+</header>
+
+<div class="breadcrumb">
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page"><a href="index.html">Catalog</a></li>
+        </ol>
+    </nav>
+</div>
+<fieldset class="row1">
+    <legend>Catalog</legend>
+    <div class="checkbox">
+        <input type="checkbox" id="blue" class="box">
+        <label class="box_shape" for="blue">Weapon nuclear</label>
+        <input type="checkbox" id="pink" class="box">
+        <label class="box_shape pink" for="pink">Green</label>
+        <input type="checkbox" id="green" class="box">
+        <label class="box_shape" for="green">Alien</label>
+    </div>
+</fieldset>
+<div class="grid_container">
+    <div class="filters">
+        <fieldset>
+            <legend class="filter_legend">Chance of Lethal Effect</legend>
+            <div>
+                <input type="checkbox" id="1">
+                <label for="1">Unlikely (0-20%)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="2">
+                <label for="2">Midl (20-40%)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="3">
+                <label for="3">Moderate (40-60%)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="4">
+                <label for="4">Likely (60-80%)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="5">
+                <label for="5">Certain (80-100%)</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="filter_legend">Price</legend>
+            <div class="size">
+                <label for="level"></label>
+                <input type="range" id="level" min="0" max="20000" step="1000" value="15000">
+            </div>
+            <div class="range-labels">
+                <span>0</span>
+                <span>20000</span>
+            </div>
+
+        </fieldset>
+    </div>
+    <div class="products">
+        <div class="hProduct">
+            <a class="u-url" href="card.html">
+                <div class="picture">
+                    <img src="assets/images/dragon_320.webp" alt="radioactive dragon">
+                </div>
+            </a>
+            <div class="hProduct-info">
+                <div class="hProduct-name">
+                    <a class="u-url" href="card.html">Radioactive Dragon</a>
+                </div>
+                <div class="hProduct-price">12345</div>
+                <div class="availability not">
+                    not available
+                </div>
+                <button type="button" disabled>
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="hProduct">
+            <a class="u-url" href="card.html">
+                <div class="picture">
+                    <img src="assets/images/radiospider_320.webp" alt="radioactive spider">
+                </div>
+            </a>
+            <div class="hProduct-info">
+                <div class="hProduct-name">
+                    <a class="u-url" href="card.html">Radioactive Spider</a>
+                </div>
+                <div class="hProduct-price">10000</div>
+                <div class="availability not">
+                    not available
+                </div>
+                <button type="button" disabled>
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="hProduct">
+            <a class="u-url" href="card.html">
+                <div class="picture">
+                    <img src="assets/images/humster_320.webp" alt="radioactive hamster">
+                </div>
+            </a>
+            <div class="hProduct-info">
+                <div class="hProduct-name">
+                    <a class="u-url" href="card.html">Radioactive Hamster</a>
+                </div>
+                <div class="hProduct-price">29</div>
+                <div class="availability">
+                    available
+                </div>
+                <button type="button">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="hProduct">
+            <a class="u-url" href="card.html">
+                <div class="picture">
+                    <img src="assets/images/breakfest_320.webp" alt="Healthy Breakfast">
+                </div>
+            </a>
+            <div class="hProduct-info">
+                <div class="hProduct-name">
+                    <a class="u-url" href="card.html">Healthy Breakfast</a>
+                </div>
+                <div class="hProduct-price">99</div>
+                <div class="availability">
+                    available
+                </div>
+                <button type="button">
+                    buy
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="pagination">
+    <a href="#" class="pagination-item">&laquo;</a> <!-- Стрелка влево -->
+    <a href="#" class="pagination-item active">1</a>
+    <a href="#" class="pagination-item ">2</a> <!-- Активная страница -->
+    <a href="#" class="pagination-item">3</a>
+    <a href="#" class="pagination-item">4</a>
+    <a href="#" class="pagination-item">5</a>
+    <a href="#" class="pagination-item">&raquo;</a> <!-- Стрелка вправо -->
+</div>
+<footer>
+    <h3> Place something here! Terms, Policy and so on... </h3>
+</footer>
+</body>
+</html>
