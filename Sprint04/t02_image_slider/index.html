@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Image slider</title>
+  <meta name="description" content="t02. Image slider">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="slider-container">
+    <button class="prev" onclick="changeSlide(-1)">
+      <div class="left"></div>
+    </button>
+    <div class="slider">
+        <img src="assets/images/Egg.jpg" alt="Egg" class="slide">
+        <img src="assets/images/Hen.jpg" alt="Hen" class="slide">
+        <img src="assets/images/Chicken.jpg" alt="Chicken" class="slide">
+    </div>
+    <button class="next" onclick="changeSlide(1)">
+      <div class="right"></div>
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div{
+	position: sticky;
+	top: 20px;
+	padding: 5px 30px;
+	width: fit-content;
+	background-color: #ff0000;
+	height: fit-content;
+	border-radius: 20px;
+}

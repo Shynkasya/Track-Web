@@ -1,0 +1,36 @@
+#yellow{
+	background-color: #d7c350;
+	left: 300px;
+	top: 20px;
+}
+#purple{
+	background-color: #a54bd7;
+	left: 400px;
+	top: 100px;
+}
+#green{
+	background-color: #41d764;
+	left: 250px;
+	top: 100px;
+}
+#blue{
+	background-color: #0582d2;
+	left: 350px;
+	top: 150px;
+}
+#red{
+	background-color: #d73755;
+	left: 425px;
+	top: 175px;
+}
+#pink{
+	background-color: #d75578;
+	left: 300px;
+	top: 200px;
+}
+.block{
+	height: 50px;
+	width: 50px;
+	transform: rotate(45deg);
+	position: absolute;
+}

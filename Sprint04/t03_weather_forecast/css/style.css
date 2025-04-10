@@ -1,0 +1,45 @@
+body {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+#main-content{
+	display: grid;
+	text-align: center;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border-radius: 20px;
+	padding-bottom: 30px;
+}
+#city{
+	background-color:cadetblue;
+	color: aliceblue;
+	margin: 0;
+	border-radius: 20px 20px 0 0;
+}
+
+.forecast{
+	width: 120px;
+	height: 170px;
+	text-align: center;
+	margin: 1px;
+}
+#forecast_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.time{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: white;
+	background-color: #3c91b4;
+	margin: 0px;
+}
+.temperature{
+	font-size: 2em;
+	font-weight: 400;
+	margin: 0px;
+}
+img{
+	width: 114px;
+}
